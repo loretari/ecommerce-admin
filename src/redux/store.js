@@ -23,7 +23,7 @@ const rootReducer = combineReducers({
     user: userReducer
 });
 
-const persistedReducer = persistReducer(persistConfig, userReducer);
+const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 export const store = configureStore({
     reducer: persistedReducer,

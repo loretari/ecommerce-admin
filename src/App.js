@@ -15,29 +15,37 @@ import Login from "./pages/login/Login";
 
 
 function App() {
+
+  //  check if the user is an admin
+  //   const admin = JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser.isAdmin
   return (
     <BrowserRouter>
 
         <Routes>
             <Route path= "/login" element={<Login/>}/>
         </Routes>
-            <Topbar/>
+            {/*{  admin && ( <>*/}
+                <Topbar/>
 
 
 
-       <div className= "container">
+                <div className= "container">
 
-           <Sidebar/>
-               <Routes>
-           <Route index path= "/" element={<Home/>}/>
-           <Route path= "/users" element={<UserList/>}/>
-           <Route path= "/user/:userId" element={<User/>}/>
-           <Route path= "/newUser" element={<NewUser/>}/>
-           <Route path= "/products" element={<ProductList/>} />
-           <Route path= "/product/:ID" element={<Product/>}/>
-           <Route path= "/newproduct" element={<NewProduct/>} />
-           </Routes>
-       </div>
+                    <Sidebar/>
+                    <Routes>
+                        <Route index path= "/" element={<Home/>}/>
+                        <Route path= "/users" element={<UserList/>}/>
+                        <Route path= "/user/:userId" element={<User/>}/>
+                        <Route path= "/newUser" element={<NewUser/>}/>
+                        <Route path= "/products" element={<ProductList/>} />
+                        <Route path= "/product/:ID" element={<Product/>}/>
+                        <Route path= "/newproduct" element={<NewProduct/>} />
+                    </Routes>
+                </div>
+            {/*</>)}*/}
+
+
+
 
         </BrowserRouter>
   );
