@@ -1,0 +1,24 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000vh;
+    flex-direction: column;
+}
+
+.loginText {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.loginPassword {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.loginButton {
+    cursor: pointer;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+}
