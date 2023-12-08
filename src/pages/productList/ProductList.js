@@ -1,13 +1,21 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./productList.css";
 import { Link } from "react-router-dom";
 import {productRows} from "../../dummyData";
 import {DataGrid} from "@mui/x-data-grid";
 import {DeleteOutline} from "@mui/icons-material";
+import {useDispatch, useSelector} from "react-redux";
+// import {getProducts} from "../../redux/apiCalls";
 
 export default function ProductList () {
 
     const [data, setData] = useState(productRows);
+    // const dispatch = useDispatch();
+    // const products = useSelector(state => state.product.products)
+    //
+    // useEffect(() => {
+    //     getProducts(dispatch)
+    // }, [dispatch])
 
     const handleDelete = (id) => {
         setData(data.filter((item) => item.id !== id));
@@ -15,6 +23,7 @@ export default function ProductList () {
 
 const columns = [
     { field: "id", headerName: "ID", width: 90 },
+    // { field: "_id", headerName: "ID", width: 90 },
     {
         field: "product",
         headerName: "Product",
@@ -23,6 +32,7 @@ const columns = [
             return (
                 <div className="productListItem">
                     <img className="productListImg" src={params.row.img} alt="" />
+                    {/*<img className="productListImg" src={params.row.image} alt="" />*/}
                     {params.row.name}
                 </div>
             );
@@ -64,6 +74,7 @@ const columns = [
         <div className= "productList">
             <DataGrid
             rows = {data}
+            // rows = {products}
             disableSelectionOnClick
             columns = {columns}
             pageSize = {8}
