@@ -157,6 +157,55 @@ export const userRows = [
     },
 ];
 
+
+ export const orders = [
+    {
+         id: 1,
+         userId: "Susan Carol",
+         avatar: "https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+         customer: "Susan Carol",
+         createdAt: "2 Jun 2022",
+         amount: 122.00,
+         status: "Approved",
+     },
+     {
+         id: 1,
+         userId: "Susan Carol",
+         avatar: "https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+         customer: "Susan Carol",
+         createdAt: "2 Jun 2022",
+         amount: 122.00,
+         status: "Pending",
+     },
+     {
+         id: 1,
+         userId: "Susan Carol",
+         avatar: "https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+         customer: "Susan Carol",
+         createdAt: "2 Jun 2022",
+         amount: 122.00,
+         status: "Approved",
+     },
+     {
+         id: 1,
+         userId: "Susan Carol",
+         avatar: "https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+         customer: "Susan Carol",
+         createdAt: "2 Jun 2022",
+         amount: 122.00,
+         status: "Approved",
+     },
+     {
+         id: 1,
+         userId: "Susan Carol",
+         avatar: "https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+         customer: "Susan Carol",
+         createdAt: "2 Jun 2022",
+         amount: 122.00,
+         status: "Declined",
+     },
+]
+
 export const productRows = [
     {
         id: 1,
