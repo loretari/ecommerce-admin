@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import {productRows} from "../../dummyData";
 import {DataGrid} from "@mui/x-data-grid";
 import {DeleteOutline} from "@mui/icons-material";
+import {deleteProduct, getProducts } from "../../redux/apiCalls";
 import {useDispatch, useSelector} from "react-redux";
-// import {getProducts} from "../../redux/apiCalls";
+
 
 export default function ProductList () {
 
@@ -19,6 +20,7 @@ export default function ProductList () {
 
     const handleDelete = (id) => {
         setData(data.filter((item) => item.id !== id));
+        // deleteProduct(id, dispatch)
     }
 
 const columns = [
@@ -34,6 +36,7 @@ const columns = [
                     <img className="productListImg" src={params.row.img} alt="" />
                     {/*<img className="productListImg" src={params.row.image} alt="" />*/}
                     {params.row.name}
+                    {/*{params.row.title}*/}
                 </div>
             );
         },
@@ -44,6 +47,7 @@ const columns = [
         headerName: "Status",
         width: 120,
     },
+    // {field: "inStock", headerName: "Stock", width: 200 },
     {
         field: "price",
         headerName: "Price",
@@ -62,6 +66,7 @@ const columns = [
                     <DeleteOutline
                         className="productListDelete"
                         onClick={() => handleDelete(params.row.id)}
+                        // onClick={() => handleDelete(params.row._id)}
                     />
                 </>
             );

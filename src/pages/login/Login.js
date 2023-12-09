@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import{ useDispatch } from 'react-redux'
-import { login } from '../../redux/apiCalls'
+// import { login } from '../../redux/apiCalls'
 
 const Login = () => {
     const [username,setUsername] =  useState('')
@@ -9,7 +9,7 @@ const Login = () => {
 
     const handleClick =(e)=>{
         e.preventDefault()
-        login(dispatch,{username,password})
+        // login(dispatch,{username,password})
     }
     return (
         <div style ={{display:"flex", alignItems:"center", justifyContent:"center",height:"100vh", flexDirection:"column"}}>
