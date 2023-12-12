@@ -215,6 +215,7 @@ export const productRows = [
         stock: 123,
         status: "active",
         price: "$120.00",
+        description: "Navy Blue  Dress",
     },
     {
         id: 2,
@@ -224,6 +225,7 @@ export const productRows = [
         stock: 123,
         status: "active",
         price: "$120.00",
+        description: "Navy Blue  Dress",
     },
     {
         id: 3,
@@ -233,6 +235,7 @@ export const productRows = [
         stock: 123,
         status: "active",
         price: "$120.00",
+        description: "Navy Blue  Dress",
     },
     {
         id: 4,
@@ -242,6 +245,7 @@ export const productRows = [
         stock: 123,
         status: "active",
         price: "$120.00",
+        description: "Navy Blue  Dress",
     },
     {
         id: 5,
@@ -251,6 +255,7 @@ export const productRows = [
         stock: 123,
         status: "active",
         price: "$120.00",
+        description: "Navy Blue  Dress",
     },
     {
         id: 6,
@@ -260,6 +265,7 @@ export const productRows = [
         stock: 123,
         status: "active",
         price: "$120.00",
+        description: "Navy Blue  Dress",
     },
     {
         id: 7,
@@ -269,6 +275,7 @@ export const productRows = [
         stock: 123,
         status: "active",
         price: "$120.00",
+        description: "Navy Blue  Dress",
     },
     {
         id: 8,
@@ -278,6 +285,7 @@ export const productRows = [
         stock: 123,
         status: "active",
         price: "$120.00",
+        description: "Navy Blue  Dress",
     },
     {
         id: 9,
@@ -287,6 +295,7 @@ export const productRows = [
         stock: 123,
         status: "active",
         price: "$120.00",
+        description: "Navy Blue  Dress",
     },
     {
         id: 10,
@@ -296,5 +305,6 @@ export const productRows = [
         stock: 123,
         status: "active",
         price: "$120.00",
+        description: "Navy Blue  Dress",
     },
 ];

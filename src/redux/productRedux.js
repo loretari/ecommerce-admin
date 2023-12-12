@@ -36,11 +36,46 @@
 //             state.isFetching = false
 //             state.error = true
 //         },
+//
+//     //    update products
+//         updateProductsStart: (state) => {
+//            state.isFetching = true
+//             state.error = false
+//         },
+//
+//         updateProductSuccess: (state, action) => {
+//             state.isFetching = false
+//             state.products[
+//                 state.products.findIndex((item) => item._id === action.payload.id)] = action.payload.product
+//
+//         },
+//         updateProductFailure: (state) => {
+//             state.isFetching = false
+//             state.error = true
+//         },
+//         //add product
+//         addProductStart: (state) => {
+//             state.isFetching = true
+//             state.error = false
+//         },
+//         addProductSuccess: (state, action) => {
+//             state.isFetching = false
+//             state.products.push(action.payload)
+//
+//         },
+//         addProductFailure: (state) => {
+//             state.isFetching = false
+//             state.error = true
+//         }
+//
 //     },
 // });
 //
 //
-//     export const { getProductStart,getProductFailure,getProductSuccess, deleteProductFailure,deleteProductStart,deleteProductSuccess
+//     export const {  getProductStart, getProductFailure, getProductSuccess,
+//         deleteProductFailure,deleteProductStart,deleteProductSuccess,
+//         updateProductFailure,updateProductSuccess,updateProductStart,
+//         addProductFailure,addProductStart,addProductSuccess
 //
 //     } = productSlice.actions;
 //

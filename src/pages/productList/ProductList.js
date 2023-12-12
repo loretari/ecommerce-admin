@@ -61,7 +61,9 @@ const columns = [
             return (
                 <>
                     <Link to={"/product/" + params.row.id}>
-                        <button className="productListEdit">Edit</button>
+                    {/*<Link to={"/product/" + params.row._id}>*/}
+
+                    <button className="productListEdit">Edit</button>
                     </Link>
                     <DeleteOutline
                         className="productListDelete"
