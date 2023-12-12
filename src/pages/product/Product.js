@@ -5,7 +5,7 @@ import Chart from "../../components/chart/Chart";
 import { productData } from "../../dummyData";
 import {Publish} from "@mui/icons-material";
 import {productRows} from "../../dummyData";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 export default function Product() {
 
@@ -13,13 +13,37 @@ export default function Product() {
 
    const location = useLocation();
    const id = location.pathname.split('/')[2];
-
+    // const prodId = location.pathname.split('/')[2]
    const product = productRows.filter((product) => product.id === parseInt(id));
+
+
+
    // const prodId = location.pathname.split('/')[2];
+   //  const dispatch = useDispatch();
+
     // find product using ist id
     // const product = useSelector(state => state.product.products.find(product => product.id === prodId))
 
-
+//     const updateProduct = useSelector(state => state.product.products.find(product => product._id === prodId))
+// const [product, setProduct] = useState({updateProduct})
+//     const handleChange = (event) => {
+//         const { title, value} = event.target;
+//         setProduct((prevState) => {
+//             return {
+//                 ...prevState,
+//                 [title]: value,
+//             };
+//         });
+//     };
+//
+//     const handleClick = (e) => {
+//         e.preventDefault()
+//         const newProduct = { ...product}
+//         updateProduct(prodId, newProduct, dispatch())
+//     }
+//
+//
+//
 
 
     return (
@@ -31,6 +55,10 @@ export default function Product() {
                 </Link>
             </div>
             <div className="productTop">
+
+
+
+
                 <div className="productTopRight">
                     <div className="productInfoTop">
                         <img
@@ -54,11 +82,14 @@ export default function Product() {
                     </div>
                 </div>
             </div>
+
+
             <div className="productBottom">
                 <form className="productForm">
                     <div className="productFormLeft">
                         <label>Product Name</label>
-                        <input type="text" placeholder= {product[0].name}/>
+                        {/*<input type="text" placeholder= {product[0].name} onChange={handleChange}/>*/}
+                        <input type="text" placeholder= {product[0].name} />
                         <label>Product Description</label>
                         <input type="text" placeholder={product[0].description} />
                         <label>Product Price</label>
@@ -68,8 +99,11 @@ export default function Product() {
                             <option value="true">Yes</option>
                             <option value="false">No</option>
                         </select>
+                        {/*    /!*<button onClick={handleClick} className="productButton">Update</button>*!/*/}
+                            <button  className="productButton">Update</button>
 
                     </div>
+              
                     <div className="productFormRight">
                         <div className="productUpload">
                             <img src={product[0].img} alt="" className="productUploadImg" />
@@ -78,9 +112,19 @@ export default function Product() {
                             </label>
                             <input type="file" id="file" style={{display: "none"}}/>
                         </div>
-                        <button className="productButton">Update</button>
+                        {/*<button onClick={handleClick} className="productButton">Update</button>*/}
+                        <button  className="productButton">Update</button>
                     </div>
+                    {/*<div className="productTopRight">*/}
+
+                    {/*</div>*/}
+
                 </form>
+
+
+
+
+
             </div>
         </div>
     )
