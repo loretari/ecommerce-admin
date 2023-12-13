@@ -101,6 +101,8 @@ export default function User () {
                                     className="userUpdateImg"
                                     src="https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                                     alt=""
+                                    // src= ""
+                                    // alt= "COMING SOON"
                                 />
                                 <label htmlFor="file">
                                     <Publish className="userUpdateIcon" />

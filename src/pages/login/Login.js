@@ -25,7 +25,7 @@ const Login = () => {
                 height:"100vh",
                 flexDirection:"column"
             }}>
-            <h1 style = {{fontSize: "40px", fontWeight:"bold"}}>Admin Log In</h1>
+            <h1 style = {{fontSize: "40px", fontWeight: "bold"}}>Admin Log In</h1>
             <input
                 type = "text"
                 style = {{
@@ -41,10 +41,11 @@ const Login = () => {
             <button
                 onClick ={handleClick}
                 style ={{
-                    cursor:"pointer",
-                    padding:"10px",
-                    width:"100px",
-                    borderRadius:"20px"}}>
+                    // cursor: "pointer",
+                    padding: "10px",
+                    width: "100px",
+                    // borderRadius: "20px"
+                }}>
                 Login
             </button>
             {/*<button style={{cursor:"pointer",padding:"10px",width:"100px",borderRadius:"20px"}} onClick= {handleLogout}>Logout</button>*/}
@@ -57,51 +58,3 @@ export default Login
 
 
 
-
-// import React, { useState } from "react";
-// import "./login.css";
-// import {login} from "../../redux/apiCalls";
-// import {useDispatch} from "react-redux";
-//
-//
-// const Login = () => {
-//
-//     const [username, setUsername] = useState("");
-//     const [password, setPassword] = useState("");
-//
-//     const dispatch = useDispatch()
-//
-//     const handleLogin = (e) => {
-//         setUsername(e.target.value);
-//     }
-//
-//     const handlePassword = (e) => {
-//         setPassword(e.target.value);
-//     }
-//
-//     const handleClick = (e) => {
-//         e.preventDefault()
-//         login(dispatch, {username, password})
-//     }
-//
-//    return (
-//        <div className= "login">
-//                <input  type= "text" className= "loginText" placeholder= "username"
-//                        onChange={ handleLogin }
-//                />
-//                <input  type= "password" className= "loginPassword" placeholder= "username"
-//                        onChange={ handlePassword }
-//                />
-//                <button className= "loginButton"
-//                    onClick={ handleClick }
-//                >Login</button>
-//        </div>
-//
-//
-//
-//        )
-//
-//
-// }
-//
-// export default Login;
