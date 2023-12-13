@@ -11,8 +11,17 @@ import {
     Timeline,
     TrendingUp, WorkOutline
 } from "@mui/icons-material";
+import {useDispatch} from "react-redux";
+import {userLogout} from "../../redux/apiCalls";
 
 export default function Sidebar () {
+
+    const dispatch = useDispatch();
+    const handleClick = (e) => {
+        e.preventDefault()
+        userLogout(dispatch);
+    }
+
     return (
         <div className= "sidebar">
             <div className= "sidebarWrapper">
@@ -62,6 +71,22 @@ export default function Sidebar () {
                         </li>
                     </ul>
                 </div>
+
+
+                <div className="sidebarMenu">
+                    <h3 className="sidebarTitle">Settings</h3>
+                    <ul className="sidebarList">
+
+                        <li  onClick={handleClick}className="sidebarListItem">
+                            <PermIdentity className="sidebarIcon" />
+                            Log Out
+                        </li>
+
+
+                    </ul>
+                </div>
+
+
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Notifications</h3>
                     <ul className="sidebarList">
