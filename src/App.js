@@ -24,8 +24,9 @@ function App() {
         <Routes>
             <Route path= "/login" element={<Login/>}/>
         </Routes>
-            {/*{  admin && ( <>*/}
-                <Topbar/>
+        {/*{ admin && <>*/}
+            <Topbar />
+
 
 
 
@@ -42,8 +43,8 @@ function App() {
                         <Route path= "/newproduct" element={<NewProduct/>} />
                     </Routes>
                 </div>
+        {/*</>}*/}
             {/*</>)}*/}
-
 
 
 

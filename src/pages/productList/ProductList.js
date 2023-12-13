@@ -24,8 +24,8 @@ export default function ProductList () {
     }
 
 const columns = [
-    { field: "id", headerName: "ID", width: 90 },
-    // { field: "_id", headerName: "ID", width: 90 },
+    { field: "id", headerName: "ID", width: 220 },
+    // { field: "_id", headerName: "ID", width: 220 },
     {
         field: "product",
         headerName: "Product",
@@ -84,7 +84,9 @@ const columns = [
             // rows = {products}
             disableSelectionOnClick
             columns = {columns}
-            pageSize = {10}
+            getRowId={(data) => data.id}
+            // getRowId={(row) => row._id}
+            pageSize={9}
             // checkboxSelection
             />
         </div>

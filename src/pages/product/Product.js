@@ -26,24 +26,7 @@ export default function Product() {
 
 //     const updateProduct = useSelector(state => state.product.products.find(product => product._id === prodId))
 // const [product, setProduct] = useState({updateProduct})
-//     const handleChange = (event) => {
-//         const { title, value} = event.target;
-//         setProduct((prevState) => {
-//             return {
-//                 ...prevState,
-//                 [title]: value,
-//             };
-//         });
-//     };
-//
-//     const handleClick = (e) => {
-//         e.preventDefault()
-//         const newProduct = { ...product}
-//         updateProduct(prodId, newProduct, dispatch())
-//     }
-//
-//
-//
+
 
 
     return (
@@ -55,8 +38,6 @@ export default function Product() {
                 </Link>
             </div>
             <div className="productTop">
-
-
 
 
                 <div className="productTopRight">
@@ -88,18 +69,21 @@ export default function Product() {
                 <form className="productForm">
                     <div className="productFormLeft">
                         <label>Product Name</label>
-                        {/*<input type="text" placeholder= {product[0].name} onChange={handleChange}/>*/}
+                        {/*<input type="text" placeholder= {updatedProduct.title} />*/}
                         <input type="text" placeholder= {product[0].name} />
                         <label>Product Description</label>
+                        {/*<input type="text" placeholder={updatedProduct.description} />*/}
                         <input type="text" placeholder={product[0].description} />
                         <label>Product Price</label>
+                        {/*<input type="number" placeholder={updatedProduct.price}  />*/}
                         <input type="text" placeholder={product[0].price} />
                         <label>In Stock</label>
+                        {/*<select  name="inStock" id="idStock">*/}
                         <select name="inStock" id="idStock">
                             <option value="true">Yes</option>
                             <option value="false">No</option>
                         </select>
-                        {/*    /!*<button onClick={handleClick} className="productButton">Update</button>*!/*/}
+                        {/*    /!*<button className="productButton">Update</button>*!/*/}
                             <button  className="productButton">Update</button>
 
                     </div>

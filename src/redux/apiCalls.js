@@ -1,4 +1,4 @@
-import { loginFailure, loginStart, loginSuccess, logout } from "./userRedux";
+import { loginFailure, loginStart, loginSuccess } from "./userRedux";
 import { getProductStart,getProductFailure,getProductSuccess,
     deleteProductFailure,deleteProductStart,deleteProductSuccess,
     updateProductFailure,updateProductSuccess,updateProductStart,
@@ -18,9 +18,9 @@ export const login = async (dispatch, user) => {
     }
 };
 
-export const userLogout = async (dispatch, user) => {
-    dispatch(logout())
-}
+// export const userLogout = async (dispatch, user) => {
+//     dispatch(logout())
+// }
 
 // // public request because you don't need to be admin to retrieve products
 // export const getProducts = async (dispatch) => {
