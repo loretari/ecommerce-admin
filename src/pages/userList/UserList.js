@@ -73,7 +73,7 @@ export default function UserList () {
                         <Link to={"/user/" + params.row.id}>
                             <button className="userListEdit">Edit</button>
                         </Link>
-                        <Link to={"/users/" + params.row._id}>
+                        <Link to={"/user/" + params.row._id}>
                             <button className="productListEdit">Edit</button>
                         </Link>
                         <DeleteOutline
