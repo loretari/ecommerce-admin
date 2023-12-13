@@ -91,7 +91,7 @@ export const userLogout = async (dispatch, user) => {
 // export const updateClient = async (id,product, dispatch) => {
 //     dispatch(updateClientStart());
 //     try {
-//         const res = await userRequest.update(`/products/${id}`);
+//         const res = await userRequest.update(`/users/${id}`);
 //         dispatch(updateClientSuccess({id:id, product:product}));
 //     } catch (err) {
 //         dispatch(updateClientFailure());
@@ -99,13 +99,13 @@ export const userLogout = async (dispatch, user) => {
 // }
 //
 //
-// export const addClient = async (product, dispatch) => {
+// export const addClient = async (user, dispatch) => {
 //     dispatch(addClientStart());
 //     try {
-//         const res = await userRequest.post(`/products/`, product);
+//         const res = await userRequest.post(`/auth/register`, user);
 //         dispatch(addClientSuccess(res.data));
 //     } catch (err) {
 //         dispatch(addClientFailure());
 //     }
-
+//
 // }

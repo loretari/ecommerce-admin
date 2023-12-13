@@ -1,26 +1,45 @@
-import React from "react";
+import React, {useState} from "react";
 import "./newUser.css";
+import {useDispatch} from "react-redux";
+// import { addClient } from "../../redux/apiCalls";
 
 export default function NewUser () {
+
+    const [user, setUser] = useState({});
+    const dispatch = useDispatch();
+    const handleChange = (e) => {
+        setUser(prev => {
+            return { ...prev, [e.target.name] : e.target.value }
+        });
+    };
+
+    const handleClick = (e) => {
+        e.preventDefault()
+        const newUser = { ...user }
+        console.log(newUser)
+        // addClient(newUser, dispatch)
+    }
+
+
     return (
         <div className="newUser">
             <h1 className="newUserTitle">New User</h1>
             <form className="newUserForm">
                 <div className="newUserItem">
                     <label>Username</label>
-                    <input type="text" placeholder="john"/>
+                    <input name= "nickname" type="text" placeholder="john" onChange={handleChange}/>
                 </div>
                 <div className="newUserItem">
                     <label>Full Name</label>
-                    <input type="text" placeholder="John Smith"/>
+                    <input name= "username" type="text" placeholder="John Smith" onChange={handleChange}/>
                 </div>
                 <div className="newUserItem">
                     <label>Email</label>
-                    <input type="email" placeholder="john@gmail.com"/>
+                    <input name= "email" type="email" placeholder="john@gmail.com" onChange={handleChange}/>
                 </div>
                 <div className="newUserItem">
                     <label>Password</label>
-                    <input type="password" placeholder="password"/>
+                    <input name= "password" type="password" placeholder="password" onChange={handleChange}/>
                 </div>
                 <div className="newUserItem">
                     <label>Phone</label>
@@ -42,13 +61,13 @@ export default function NewUser () {
                     </div>
                 </div>
                 <div className="newUserItem">
-                    <label>Active</label>
-                    <select className="newUserSelect" name="active" id="active">
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
+                    <label>Admin</label>
+                    <select style={{height: "43px"}}  name="idAdmin" onChange={handleChange} id="active">
+                        <option value="false">No</option>
+                        <option value="true">Yes</option>
                     </select>
                 </div>
-                <button className="newUserButton">Create</button>
+                <button onClick= {handleClick} className="newUserButton">Create</button>
             </form>
         </div>
     )

@@ -78,6 +78,7 @@ export const userRows = [
         start: "10.12.1999",
         phone: "+1 123 456 67",
         location: "New York | USA",
+        password: "password",
 
     },
     {
@@ -93,6 +94,7 @@ export const userRows = [
         start: "10.12.1999",
         phone: "+1 123 456 67",
         location: "New York | USA",
+        password: "password",
     },
     {
         id: 3,
@@ -107,6 +109,7 @@ export const userRows = [
         start: "10.12.1999",
         phone: "+1 123 456 67",
         location: "New York | USA",
+        password: "password",
     },
     {
         id: 4,
@@ -121,6 +124,7 @@ export const userRows = [
         start: "10.12.1999",
         phone: "+1 123 456 67",
         location: "New York | USA",
+        password: "password",
     },
     {
         id: 5,
@@ -135,6 +139,7 @@ export const userRows = [
         start: "10.12.1999",
         phone: "+1 123 456 67",
         location: "New York | USA",
+        password: "password",
     },
     {
         id: 6,
@@ -149,6 +154,7 @@ export const userRows = [
         start: "10.12.1999",
         phone: "+1 123 456 67",
         location: "New York | USA",
+        password: "password",
     },
     {
         id: 7,
@@ -163,6 +169,7 @@ export const userRows = [
         start: "10.12.1999",
         phone: "+1 123 456 67",
         location: "New York | USA",
+        password: "password",
     },
     {
         id: 8,
@@ -177,6 +184,7 @@ export const userRows = [
         start: "10.12.1999",
         phone: "+1 123 456 67",
         location: "New York | USA",
+        password: "password",
     },
     {
         id: 9,
@@ -191,6 +199,7 @@ export const userRows = [
         start: "10.12.1999",
         phone: "+1 123 456 67",
         location: "New York | USA",
+        password: "password",
     },
     {
         id: 10,
@@ -205,6 +214,7 @@ export const userRows = [
         start: "10.12.1999",
         phone: "+1 123 456 67",
         location: "New York | USA",
+        password: "password",
     },
 ];
 
