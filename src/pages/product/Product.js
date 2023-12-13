@@ -103,7 +103,7 @@ export default function Product() {
                             <button  className="productButton">Update</button>
 
                     </div>
-              
+
                     <div className="productFormRight">
                         <div className="productUpload">
                             <img src={product[0].img} alt="" className="productUploadImg" />

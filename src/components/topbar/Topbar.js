@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './topbar.css';
 import { NotificationsNone, Language, Settings } from "@mui/icons-material";
+import Auth from "../../utils";
 
 export default function Topbar() {
 
@@ -11,6 +13,12 @@ export default function Topbar() {
                     <span className= "logo" >LorDesIgn Portal</span>
                 </div>
                  <div className= "topRight">
+
+                     <Link
+                         to= "/"
+                     onClick= {() => Auth.logout()}
+                     >Logout</Link>
+
                      <div className= "topbarIconContainer">
                         <NotificationsNone />
                          <span className= "topIconBadge">2</span>

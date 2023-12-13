@@ -84,8 +84,8 @@ const columns = [
             // rows = {products}
             disableSelectionOnClick
             columns = {columns}
-            pageSize = {8}
-            checkboxSelection
+            pageSize = {10}
+            // checkboxSelection
             />
         </div>
     )
