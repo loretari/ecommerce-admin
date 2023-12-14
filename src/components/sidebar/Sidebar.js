@@ -49,18 +49,18 @@ export default function Sidebar () {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
-                        {/*<Link to="/users" className="link">*/}
-                        {/*    <li className="sidebarListItem">*/}
-                        {/*        <PermIdentity className="sidebarIcon" />*/}
-                        {/*        Users*/}
-                        {/*    </li>*/}
-                        {/*</Link>*/}
-                        {/*<Link to="/products" className="link">*/}
-                        {/*    <li className="sidebarListItem">*/}
-                        {/*        <Storefront className="sidebarIcon" />*/}
-                        {/*        Products*/}
-                        {/*    </li>*/}
-                        {/*</Link>*/}
+                        <Link to="/users" className="link">
+                            <li className="sidebarListItem">
+                                <PermIdentity className="sidebarIcon" />
+                                Users
+                            </li>
+                        </Link>
+                        <Link to="/products" className="link">
+                            <li className="sidebarListItem">
+                                <Storefront className="sidebarIcon" />
+                                Products
+                            </li>
+                        </Link>
                         <li className="sidebarListItem">
                             <AttachMoney className="sidebarIcon" />
                             Create New Product
@@ -77,7 +77,7 @@ export default function Sidebar () {
                     <h3 className="sidebarTitle">Settings</h3>
                     <ul className="sidebarList">
 
-                        <li  onClick={handleClick}className="sidebarListItem">
+                        <li  onClick={handleClick} className="sidebarListItem">
                             <PermIdentity className="sidebarIcon" />
                             Log Out
                         </li>
